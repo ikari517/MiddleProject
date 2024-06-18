@@ -13,7 +13,7 @@ namespace Practice.Extensions
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection AddViewModels(this IServiceCollection services)
+        public static IServiceCollection CollectViewModels(this IServiceCollection services)
         {
             var viewModelTypes = Assembly.GetExecutingAssembly()
                                          .GetTypes()
@@ -32,7 +32,7 @@ namespace Practice.Extensions
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection AddViews(this IServiceCollection services)
+        public static IServiceCollection CollectViews(this IServiceCollection services)
         {
             var viewlTypes = Assembly.GetExecutingAssembly()
                                          .GetTypes()

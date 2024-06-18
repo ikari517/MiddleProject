@@ -22,8 +22,8 @@ namespace Practice
         {
             var services = new ServiceCollection();
 
-            services.AddViewModels();
-            services.AddViews();
+            services.CollectViewModels();
+            services.CollectViews();
 
             return services.BuildServiceProvider();
 

@@ -12,13 +12,11 @@ namespace Practice.Converters
         {
             if (!Gender.IsDefined(typeof(Gender), value)) return DependencyProperty.UnsetValue;
 
-            //return gender == 1 ? "남자" : "여자";
             return (Gender)value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            //if (value is not Gender gender) return DependencyProperty.UnsetValue;
             if (!Gender.IsDefined(typeof(Gender), value)) return DependencyProperty.UnsetValue;
 
             return (Gender)value;
