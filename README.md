@@ -1,6 +1,6 @@
 ### Practice Project ###
 + Must read before Proejct running
-  1. Edit DB Connection (Root -> Practice -> App.Config -> MyDatabase.connectionString
+  1. Edit DB Connection (Root -> Practice -> App.Config -> MyDatabase.connectionString)
   2. Make Same Table
       + DDL (for MariaDB
         ``` sql
