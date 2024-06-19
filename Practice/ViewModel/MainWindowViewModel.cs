@@ -29,46 +29,54 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        /// [Source] DB Context
+        /// [Data Source] 
+        /// DB Context
         /// </summary>
         private readonly MyDBContext MyDB;
 
         /// <summary>
-        /// [Binding param] 사원 목록 (Not Mapped)
+        /// [Binding param] 
+        /// 사원 목록 (Not Mapped)
         /// </summary>
         [ObservableProperty]
         private ObservableCollection<EmployeeModel>? employeeList;
 
         /// <summary>
-        /// [Binding param] 전체 체크
+        /// [Binding param] 
+        /// 전체 체크
         /// </summary>
         [ObservableProperty]
         private bool allChecked = false;
 
         /// <summary>
-        /// [Binding param] 추가할 사원 
+        /// [Binding param] 
+        /// 추가할 사원 
         /// </summary>
         [ObservableProperty]
         private EmployeeModel? newEmployee;
         /// <summary>
-        /// [Binding param] 검색 조건
+        /// [Binding param] 
+        /// 검색 조건
         /// </summary>
         [ObservableProperty]
         private EmployeeModel? searchCondition;
 
         /// <summary>
-        /// [Binding param] 성별 목록
+        /// [Binding param] 
+        /// 성별 목록
         /// </summary>
         [ObservableProperty]
         private IList<Gender>? genderTypeList = new List<Gender>() { Gender.남자, Gender.여자 };
         /// <summary>
-        /// [Binding param] 검색조건 성별 목록
+        /// [Binding param] 
+        /// 검색조건 성별 목록
         /// </summary>
         [ObservableProperty]
         private IList<Gender>? seachGenderTypeList = new List<Gender>() { Gender.전체, Gender.남자, Gender.여자 };
 
         /// <summary>
-        /// [Binding Command] 전체 체크 클릭
+        /// [Binding Command] 
+        /// 전체 체크 클릭
         /// </summary>
         [RelayCommand]
         public void AllCheck_Click()
@@ -80,7 +88,8 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        /// [Binding Command] 사원 개별 체크 클릭
+        /// [Binding Command] 
+        /// 사원 개별 체크 클릭
         /// </summary
         [RelayCommand]
         public void Check_Click()
@@ -96,7 +105,8 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        ///  [Binding Command] 검색 버튼 클릭
+        ///  [Binding Command] 
+        ///  검색 버튼 클릭
         /// </summary>
         [RelayCommand]
         private void SearchButton_Click()
@@ -112,7 +122,8 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        /// [Binding Command] 추가 버튼 클릭
+        /// [Binding Command] 
+        /// 추가 버튼 클릭
         /// </summary>
         [RelayCommand]
         private void AddButton_Click()
@@ -140,7 +151,8 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        /// [Binding Command] 수정 버튼 클릭
+        /// [Binding Command] 
+        /// 수정 버튼 클릭
         /// </summary>
         [RelayCommand]
         private void ModifyButton_Click()
@@ -164,7 +176,8 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        /// [Binding Command] 삭제 버튼 클릭
+        /// [Binding Command] 
+        /// 삭제 버튼 클릭
         /// </summary>
         [RelayCommand]
         private void DeleteButton_Click()
@@ -188,7 +201,8 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        /// [Business Logic] 사원 목록 조회
+        /// [Business Logic] 
+        /// 사원 목록 조회
         /// </summary>
         /// <param name="condition">조회 조건</param>
         /// <returns></returns>
@@ -221,7 +235,8 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        /// [Business Logic] 사원 추가
+        /// [Business Logic] 
+        /// 사원 추가
         /// </summary>
         /// <param name="newEmployee">추가할 사원</param>
         /// <returns></returns>
@@ -243,7 +258,8 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        /// [Business Logic] 사원 목록 수정
+        /// [Business Logic] 
+        /// 사원 목록 수정
         /// </summary>
         /// <param name="UIEmployeeList">수정된 UI 목록</param>
         /// <returns></returns>
@@ -279,7 +295,8 @@ namespace Practice.ViewModel
         }
 
         /// <summary>
-        /// [Business Logic] 사원 목록 삭제
+        /// [Business Logic] 
+        /// 사원 목록 삭제
         /// </summary>
         /// <param name="UIEmployeeList">체크된(삭제할) UI 목록</param>
         /// <returns></returns>
