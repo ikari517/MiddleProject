@@ -20,15 +20,18 @@ namespace Practice.Model
         [ObservableProperty]
         private int? id;
 
-        [Required(ErrorMessage = "Name is required.")]
+        [Required(ErrorMessage = "이름은 필수 입력값입니다.")]
+        [StringLength(10, ErrorMessage = "이름은 10글자이내여야 합니다.")]
         [ObservableProperty]
         private string? name;
         
-        [Required(ErrorMessage = "Position is required.")]
+        [Required(ErrorMessage = "직위는 필수 입력값입니다.")]
+        [StringLength(10, ErrorMessage = "직위는 10글자이내여야 합니다.")]
         [ObservableProperty]
         private string? position;
 
-        [Required(ErrorMessage = "Gender is required.")]
+        [Required(ErrorMessage = "성별은 필수 입력값입니다.")]
+        [Range(0, 1, ErrorMessage = "유효한 성별값이 아닙니다.")]
         [ObservableProperty]
         private Gender? gender;
 
