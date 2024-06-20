@@ -28,5 +28,5 @@
     + Exception Handling
     + Extension Methods
     + Reflection
-    + Validation
+    + simple Validation
     + MS Test(simple example)
