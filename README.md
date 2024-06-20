@@ -23,4 +23,9 @@
     + Maria DB(11.3.2)
   + Design pattern: Mvvm
   + Action: CRUD
-  + Etc: DB Connection(Entity Framework) / Exception Handling
+  + Etc
+    + DB Connection(Entity Framework)
+    + Exception Handling
+    + Extension Methods
+    + Reflection
+    + Validation
