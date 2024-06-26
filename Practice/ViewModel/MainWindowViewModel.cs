@@ -36,7 +36,7 @@ namespace Practice.ViewModel
 
         /// <summary>
         /// [Binding param] 
-        /// 사원 목록 (Not Mapped)
+        /// 사원 목록 (Not ORM)
         /// </summary>
         [ObservableProperty]
         private ObservableCollection<EmployeeModel>? employeeList;
@@ -246,7 +246,7 @@ namespace Practice.ViewModel
             if (newEmployee == null) return false;
             if (!newEmployee.IsValid())
             {
-                throw new InvalidDataException("입력정보가 유효하지 않습니다.\n" 
+                throw new InvalidDataException("입력정보가 유효하지 않습니다." + Environment.NewLine
                                             + newEmployee.GetErrors().First().ErrorMessage);
             }
 
@@ -271,7 +271,7 @@ namespace Practice.ViewModel
             {
                 if (!UIEmployee.IsValid())
                 {
-                    throw new InvalidDataException($"사원(Id: {UIEmployee.Id})의 입력정보가 유효하지 않습니다.\n"
+                    throw new InvalidDataException($"사원(Id: {UIEmployee.Id})의 입력정보가 유효하지 않습니다." + Environment.NewLine
                                                 + UIEmployee.GetErrors().First().ErrorMessage);
                 }
             }
